@@ -7,6 +7,8 @@ import api from './api';
 import shoppingList from './shopping-list';
 
 const main = function () {
+  
+
   api.getItems()
     .then(res => res.json())
     .then((items) => {
