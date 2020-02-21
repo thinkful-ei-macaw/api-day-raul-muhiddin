@@ -3,10 +3,11 @@
 const BASE_URL = 'https://thinkful-list-api.herokuapp.com/raul-muhiddin';
 
 function getItems() {
-  return Promise.resolve('A succesful response!');
+  return fetch(`${BASE_URL}/items`);
 }
-
+   
 
 export default {
   getItems
 };
+
